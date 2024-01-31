@@ -6,15 +6,16 @@ inputs:
     description: "Node version"
     type: "string"
     required: false
-    default: "18.x"
+    default: "20.x"
 
   build-artifact-path:
-    description: "Node version"
+    description: "Paths to include in build artifact"
     type: "string"
     required: false
     default: |
       .
       !**/.env
+      !**/.env*.local
       !**/.git/
       !**/node_modules/
 
